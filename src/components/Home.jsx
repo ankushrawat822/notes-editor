@@ -55,7 +55,7 @@ const Home = () => {
             <div className=' px-10'>
 
                 <Editor
-                    apiKey='5zmf2p3gm9xqw5gu7lpyfmzxy74hu61ge5k48c485u9lqvob'
+                    apiKey={import.meta.env.VITE_REACT_APP_TINY_MCE}
                     onInit={(_evt, editor) => editorRef.current = editor}
                     initialValue={`<p className="text-[15px]" contenteditable> ${result}</p>`}
                     init={{
